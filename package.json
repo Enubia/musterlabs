@@ -4,6 +4,10 @@
     "private": true,
     "description": "My personal website",
     "homepage": "https://musterlabs.dev",
+    "engines": {
+        "node": ">=20",
+        "pnpm": ">=8"
+    },
     "scripts": {
         "add-component": "pnpm dlx shadcn-vue@latest add",
         "build": "nuxi build",

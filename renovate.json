@@ -1,0 +1,20 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:base"
+    ],
+    "dependencyDashboard": true,
+    "pinVersions": true,
+    "packageRules": [
+        {
+            "description": "Ignore Node.js version specified in package.json",
+            "matchDepTypes": [
+                "engines"
+            ],
+            "enabled": false
+        }
+    ],
+    "schedule": [
+        "every weekend"
+    ]
+}
