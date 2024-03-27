@@ -95,7 +95,7 @@ useSeoMeta({
                     </Card>
                 </a>
             </div>
-            <div class="mt-5 flex flex-col items-center gap-5 md:flex-row">
+            <!-- <div class="mt-5 flex flex-col items-center gap-5 md:flex-row">
                 <a href="https://fitness-elite.eu" target="_blank" rel="noopener noreferrer" class="md:w-1/2">
                     <Card class="border-none bg-background hover:shadow-lg">
                         <CardHeader />
@@ -111,7 +111,7 @@ useSeoMeta({
                         </CardContent>
                     </Card>
                 </a>
-            </div>
+            </div> -->
         </section>
     </main>
     <footer class=" text-muted-foreground">
@@ -127,8 +127,8 @@ useSeoMeta({
                 <div class="underline underline-offset-[12px] hover:cursor-pointer hover:text-primary">
                     <a href="https://github.com/enubia" target="_blank" rel="noopener noreferrer">
                         <Icon name="mdi:github" class="size-10" />
+                        <span>GitHub</span>
                     </a>
-                    <span>GitHub</span>
                 </div>
                 <div class="underline underline-offset-[12px] hover:cursor-pointer hover:text-primary">
                     <a
