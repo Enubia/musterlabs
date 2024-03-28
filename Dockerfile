@@ -26,4 +26,4 @@ COPY --from=builder /app/.nuxt  /app/.nuxt
 
 EXPOSE 3001
 
-ENTRYPOINT ["npm", "start"]
+ENTRYPOINT ["node", ".output/server/index.mjs"]
