@@ -12,7 +12,7 @@ useSeoMeta({
         </div>
     </header>
     <main class="container">
-        <section class="mt-40 lg:px-40">
+        <section class="my-10 lg:my-20 lg:px-40">
             <h1>
                 Hi, I'm Marco.
             </h1>
