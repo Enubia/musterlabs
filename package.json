@@ -41,7 +41,7 @@
         "nuxt-icon": "0.6.10",
         "shadcn-nuxt": "0.10.2",
         "simple-git-hooks": "2.11.1",
-        "typescript": "5.4.3"
+        "typescript": "5.4.4"
     },
     "simple-git-hooks": {
         "pre-commit": "npx lint-staged"
