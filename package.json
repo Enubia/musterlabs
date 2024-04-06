@@ -29,7 +29,7 @@
         "vue-router": "4.3.0"
     },
     "devDependencies": {
-        "@antfu/eslint-config": "2.11.0",
+        "@antfu/eslint-config": "2.12.2",
         "@eslint/eslintrc": "3.0.2",
         "@nuxt/kit": "3.11.1",
         "@nuxtjs/google-fonts": "3.2.0",
