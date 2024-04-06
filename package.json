@@ -21,7 +21,7 @@
         "@radix-icons/vue": "1.0.0",
         "class-variance-authority": "0.7.0",
         "clsx": "2.1.0",
-        "nuxt": "3.11.1",
+        "nuxt": "3.11.2",
         "radix-vue": "1.6.2",
         "tailwind-merge": "2.2.2",
         "tailwindcss-animate": "1.0.7",
@@ -31,7 +31,7 @@
     "devDependencies": {
         "@antfu/eslint-config": "2.12.2",
         "@eslint/eslintrc": "3.0.2",
-        "@nuxt/kit": "3.11.1",
+        "@nuxt/kit": "3.11.2",
         "@nuxtjs/google-fonts": "3.2.0",
         "@nuxtjs/tailwindcss": "6.11.4",
         "eslint": "8.57.0",
