@@ -3,6 +3,57 @@ useSeoMeta({
     title: 'musterlabs | Home',
     description: 'musterlabs - Home Page',
 });
+
+const icons = [
+    {
+        name: 'mdi:language-typescript',
+        color: '#3178c6',
+        text: 'Typescript',
+        link: 'https://www.typescriptlang.org/',
+    },
+    {
+        name: 'mdi:vuejs',
+        color: '#42b883',
+        text: 'Vue.js',
+        link: 'https://vuejs.org/',
+    },
+    {
+        name: 'mdi:react',
+        color: '#61dafb',
+        text: 'React',
+        link: 'https://reactjs.org/',
+    },
+    {
+        name: 'mdi:nodejs',
+        color: '#42b883',
+        text: 'Node.js',
+        link: 'https://nodejs.org/',
+    },
+    {
+        name: 'simple-icons:pug',
+        color: '#a86454',
+        text: 'Pug.js',
+        link: 'https://pugjs.org/',
+    },
+    {
+        name: 'simple-icons:mongodb',
+        color: '#47a248',
+        text: 'MongoDB',
+        link: 'https://www.mongodb.com/',
+    },
+    {
+        name: 'simple-icons:postgresql',
+        color: '#336791',
+        text: 'PostgreSQL',
+        link: 'https://www.postgresql.org/',
+    },
+    {
+        name: 'simple-icons:docker',
+        color: '#2496ed',
+        text: 'Docker',
+        link: 'https://www.docker.com/',
+    },
+];
 </script>
 
 <template>
@@ -26,38 +77,10 @@ useSeoMeta({
                 Technologies I'm familiar with
             </h2>
             <div class="mt-3 flex flex-wrap items-center justify-center gap-4">
-                <div class="flex items-center gap-1">
-                    <Icon name="mdi:language-typescript" class="size-10" style="color: #3178c6" />
-                    <span>Typescript</span>
-                </div>
-                <div class="flex items-center gap-1">
-                    <Icon name="mdi:vuejs" class="size-10" style="color: #42b883" />
-                    <span>Vue.js</span>
-                </div>
-                <div class="flex items-center gap-1">
-                    <Icon name="mdi:react" class="size-10" style="color: #61dafb" />
-                    <span>React</span>
-                </div>
-                <div class="flex items-center gap-1">
-                    <Icon name="mdi:nodejs" class="size-10" style="color: #42b883" />
-                    <span>Node.js</span>
-                </div>
-                <div class="flex items-center gap-1">
-                    <Icon name="simple-icons:pug" class="size-10 text-yellow-900" />
-                    <span>Pug.js</span>
-                </div>
-                <div class="flex items-center gap-1">
-                    <Icon name="simple-icons:mongodb" class="size-10" style="color: #47a248" />
-                    <span>MongoDB</span>
-                </div>
-                <div class="flex items-center gap-1">
-                    <Icon name="simple-icons:postgresql" class="size-10" style="color: #336791" />
-                    <span>PostgreSQL</span>
-                </div>
-                <div class="flex items-center gap-1">
-                    <Icon name="simple-icons:docker" class="size-10" style="color: #2496ed" />
-                    <span>Docker</span>
-                </div>
+                <a v-for="{ name, color, text, link } in icons" :key="text" :href="link" target="_blank" class="flex items-center gap-1 hover:cursor-pointer">
+                    <Icon :name="name" class="size-10" :style="`color: ${color}`" />
+                    <span>{{ text }}</span>
+                </a>
             </div>
         </section>
         <section class="my-8 lg:px-40">
@@ -95,29 +118,12 @@ useSeoMeta({
                     </Card>
                 </a>
             </div>
-            <!-- <div class="mt-5 flex flex-col items-center gap-5 md:flex-row">
-                <a href="https://fitness-elite.eu" target="_blank" rel="noopener noreferrer" class="md:w-1/2">
-                    <Card class="border-none bg-background hover:shadow-lg">
-                        <CardHeader />
-                        <CardContent>
-                            <h3 class="font-semibold">
-                                Fitness Elite
-                            </h3>
-                            <p>
-                                Unleash your full potential
-                                with the all in one coaching
-                                ”ELITE EVOLUTION”
-                            </p>
-                        </CardContent>
-                    </Card>
-                </a>
-            </div> -->
         </section>
     </main>
     <footer class=" text-muted-foreground">
         <div class="justify-center p-4 text-center md:flex">
             <p>Lets get in touch:</p>
-            <a href="mailto:musterlabs@mailbox.org" class="ml-2 text-primary">musterlabs[at]mailbox.org</a>
+            <span class="ml-2 text-primary">musterlabs[at]mailbox.org</span>
         </div>
         <div class="mb-4 text-center md:mb-0">
             <p>
