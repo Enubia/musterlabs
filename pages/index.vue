@@ -104,7 +104,7 @@ const icons = [
                         </CardContent>
                     </Card>
                 </a>
-                <a href="https://donate-gifts.com" target="_blank" rel="noopener noreferrer" class="md:w-1/2">
+                <a href="https://github.com/donategifts" target="_blank" rel="noopener noreferrer" class="md:w-1/2">
                     <Card class="border-none bg-background hover:shadow-lg">
                         <CardHeader />
                         <CardContent>

@@ -15,6 +15,16 @@ export default antfu(
             'style/linebreak-style': ['error', 'unix'],
             'style/quote-props': ['error', 'as-needed'],
             'style/quotes': ['error', 'single', { avoidEscape: true }],
+            'unused-imports/no-unused-imports': 'error',
+            'unused-imports/no-unused-vars': [
+                'warn',
+                {
+                    vars: 'all',
+                    varsIgnorePattern: '^_',
+                    args: 'after-used',
+                    argsIgnorePattern: '^_',
+                },
+            ],
             'vue/block-lang': ['error', { script: { lang: 'ts' } }],
         },
 
@@ -26,19 +36,6 @@ export default antfu(
         yaml: false,
     },
     ...compat.config({
-        plugins: ['unused-imports'],
         extends: ['plugin:tailwindcss/recommended'],
-        rules: {
-            'unused-imports/no-unused-imports': 'error',
-            'unused-imports/no-unused-vars': [
-                'warn',
-                {
-                    vars: 'all',
-                    varsIgnorePattern: '^_',
-                    args: 'after-used',
-                    argsIgnorePattern: '^_',
-                },
-            ],
-        },
     }),
 );

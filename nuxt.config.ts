@@ -18,9 +18,9 @@ export default defineNuxtConfig({
     },
 
     shadcn: {
-    /**
-     * Prefix for all the imported component
-     */
+        /**
+         * Prefix for all the imported component
+         */
         prefix: '',
         /**
          * Directory that the component lives in.
@@ -28,4 +28,6 @@ export default defineNuxtConfig({
          */
         componentDir: './components/ui',
     },
+
+    compatibilityDate: '2025-01-21',
 });
