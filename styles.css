@@ -281,8 +281,24 @@ footer {
     display: block;
 }
 
-.copyright {
+.analytics {
     margin-top: 1.5rem;
+    font-size: 0.85rem;
+}
+
+.analytics a {
+    color: var(--fg-muted);
+    opacity: 0.7;
+    transition: color 160ms ease, opacity 160ms ease;
+}
+
+.analytics a:hover {
+    color: var(--primary);
+    opacity: 1;
+}
+
+.copyright {
+    margin-top: 0.5rem;
     font-size: 0.85rem;
     opacity: 0.7;
 }
